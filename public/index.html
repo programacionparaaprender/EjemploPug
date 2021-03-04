@@ -4,26 +4,55 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="Ejemplo de HTML5"/>
+    <meta name="keywords" content="HTML5, CSS3, Javascript"/>
+    <link rel="shortcut icon" type="image/x-icon" href="principal.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
     <title>Document</title>
   </head>
   <body>
-    <header> 
-      <nav>
-        <ul> 
-          <li><a href="#">soy un enlace</a></li>
-          <li><a href="#">para no tener que indentar    </a></li>
-        </ul>
+    <header class="container-fluid" style="font-style: italic;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid"><a class="navbar-brand" href="#/"><img src="images/principal.jpg" width="50" height="50" alt=""/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">           <a class="dropdown-item" href="{{casa.href}}">Curso1</a></div>
+              </li>
+            </ul>
+            <form class="d-flex fst-italic">
+              <input class="form-control me-2 fst-italic" id="iBuscar" name="nBuscar" type="search" placeholder="Buscar" aria-label="Search"/>
+              <button class="btn btn-outline-secondary fst-italic" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
-    <h1>title</h1><img src="fondo-bienvenidos.jpg" alt="fondo" width="300" height="400"/>
-    <h3>contenido</h3>
-    <h4>Hola <span>mundo</span></h4>
-    <p id="ejemplo">Parrafo con id</p>
-    <p id="ejemplo">Parrafo con id</p>
-    <p class="text clase">Parrafo parrafon con clase</p>
-    <p class="text clase">Parrafo parrafon con clase</p>
-    <p class="text clase" id="ejemplo2">Parrafo parrafon con id y clase</p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat, suscipit reiciendis eum aliquam, itaque illo numquam dignissimos aliquid odit vel facere minima possimus. Quaerat recusandae voluptas culpa porro ut.esto se mantiene al mismo nivel </p>
+    <div class="container">                
+      <h1>title</h1>
+      <h2>ejemplo de variable </h2>
+      <p class="description">foo bar baz</p>
+      <p>unless funciona igual que el if</p>
+      <p>Hola Dorian</p>
+      <p>Usuario falso</p>
+      <p>numero: 1</p>
+      <p>numero: 2</p>
+      <p>numero: 3</p>
+      <p>numero: 4</p>
+      <p>numero: 5</p>
+      <p>numero: 6</p><img src="fondo-bienvenidos.jpg" alt="fondo" width="300" height="400"/>
+      <h3>contenido</h3>
+      <h4>Hola <span>mundo</span></h4>
+      <p id="ejemplo">Parrafo con id</p>
+      <p id="ejemplo">Parrafo con id</p>
+      <p class="text clase">Parrafo parrafon con clase</p>
+      <p class="text clase">Parrafo parrafon con clase</p>
+      <p class="text clase" id="ejemplo2">Parrafo parrafon con id y clase</p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat, suscipit reiciendis eum aliquam, itaque illo numquam dignissimos aliquid odit vel facere minima possimus. Quaerat recusandae voluptas culpa porro ut.esto se mantiene al mismo nivel </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>

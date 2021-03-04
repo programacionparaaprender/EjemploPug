@@ -16,3 +16,15 @@ luego escribir gulp
 
 ### Pug es un motor de plantillas
 ### Pug es un lenguaje de programación
+
+### condicionales
+https://pugjs.org/language/conditionals.html
+- const persona = {
+                name: "Dorian",
+                surname: "Designs",
+                age: 30
+            }
+            each value, key in persona 
+                p=`valor: ${key}: ${value}`
+            
+            p=`Persona nombre: ${persona.name}`
