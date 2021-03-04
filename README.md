@@ -17,6 +17,10 @@ luego escribir gulp
 ### Pug es un motor de plantillas
 ### Pug es un lenguaje de programación
 
+
+### opciones de instalación
+https://www.npmjs.com/package/gulp-pug
+
 ### condicionales
 https://pugjs.org/language/conditionals.html
 - const persona = {
