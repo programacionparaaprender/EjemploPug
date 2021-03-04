@@ -28,3 +28,16 @@ https://pugjs.org/language/conditionals.html
                 p=`valor: ${key}: ${value}`
             
             p=`Persona nombre: ${persona.name}`
+
+
+li(class="nav-item dropdown")
+                                a(class="nav-link dropdown-toggle", href="#", id="navbarDropdown", role="button", data-bs-toggle="dropdown", aria-expanded="false") Cursos
+          
+                                div(class="dropdown-menu", aria-labelledby="navbarDropdown")            
+                                    a(target="_blank", class="dropdown-item", href="#") Curso1
+                                    a(target="_blank", class="dropdown-item", href="#") Curso2
+                                    a(target="_blank", class="dropdown-item", href="#") Curso3
+
+                        form(class="d-flex fst-italic")
+                            input(id="iBuscar",name="nBuscar",class="form-control me-2 fst-italic",type="search",placeholder="Buscar",aria-label="Search")
+                            button(class="btn btn-outline-secondary fst-italic",type="submit") Buscar
