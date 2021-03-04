@@ -7,6 +7,9 @@
   "author": "",
   "license": "ISC",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start"
+  },
   "browserslist": [
     "last 1 version",
     "> 1%",
@@ -14,8 +17,6 @@
     "not dead"
   ],
   "dependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/register": "^7.6.2",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",

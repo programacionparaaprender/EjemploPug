@@ -1,16 +1,17 @@
-include ../config/config
-include ../mixins/setting
-doctype
 html(lang="es")
     head
         meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="description", content="Ejemplo de HTML5")
+        meta(name="keywords", content="HTML5, CSS3, Javascript")
+        link(rel="shortcut icon", type="image/x-icon", href="principal.ico")
         link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl", crossorigin="anonymous")
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js", integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0", crossorigin="anonymous")
 		
         title Programación para aprender
     body
+
         header(class="container-fluid", style="font-style: italic;")
             nav(class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top")
                 div(class="container-fluid")
@@ -27,16 +28,13 @@ html(lang="es")
                         
                             li(class="nav-item dropdown")
                                 a(class="nav-link dropdown-toggle", href="#", id="navbarDropdown", role="button", data-bs-toggle="dropdown", aria-expanded="false") Cursos
-        
-                                div(class="dropdown-menu", aria-labelledby="navbarDropdown")  
-                                    - let settingString = (value) => { return '[setting:' + value + ']'}
+          
+                                div(class="dropdown-menu", aria-labelledby="navbarDropdown")            
                                     a(target="_blank", class="dropdown-item", href="#") Curso1
                                     a(target="_blank", class="dropdown-item", href="#") Curso2
+                                    a(target="_blank", class="dropdown-item", href="#") Curso3
                         form(class="d-flex fst-italic")
                             input(id="iBuscar",name="nBuscar",class="form-control me-2 fst-italic",type="search",placeholder="Buscar",aria-label="Search")
                             button(class="btn btn-outline-secondary fst-italic",type="submit") Buscar
-            block header
-        main.main
-            block main
-        footer.footer
-            block footer
+        section
+            h1 Título

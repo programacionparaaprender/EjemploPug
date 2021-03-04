@@ -1,1 +1,13 @@
 extends ../templates/template
+include ../mixins/link
+include ../mixins/list
+
+prepend header
+append header
+    h2 Subtitle
+
+block main
+    include ./plantilla/main
+    +link('/enlace', 'enlace')
+    ul
+        +list(names)

@@ -18,6 +18,12 @@ luego escribir gulp
 ### Pug es un lenguaje de programación
 
 
+### repositorio padre
+https://github.com/DorianDesings/pug2019/blob/master/dev/templates/template.pug
+
+### plugins
+http://localhost:3001/plugins
+
 ### opciones de instalación
 https://www.npmjs.com/package/gulp-pug
 

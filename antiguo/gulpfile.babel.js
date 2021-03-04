@@ -21,5 +21,5 @@ gulp.task('default', () => {
   })
 
   //PUG
-  gulp.watch('./dev/**/*.pug', gulp.series('pug')).on('change', server.reload)
+  gulp.watch('./dev/*.pug', gulp.series('pug')).on('change', server.reload)
 })

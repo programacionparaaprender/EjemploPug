@@ -1,0 +1,15 @@
+mixin selecciona(element)
+   case element
+    when 0
+        block main
+            include ../plantilla/main
+            +link('/enlace', 'enlace')
+            ul
+                +list(names)
+    when 1
+        block main
+            include ../plantilla/plantilla1   
+    default
+        block main
+            include ../plantilla/pantilla2
+   
