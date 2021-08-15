@@ -1,5 +1,4 @@
 include ../config/config
-include ../mixins/setting
 doctype
 html(lang="es")
     head
@@ -24,14 +23,14 @@ html(lang="es")
                         ul(class="navbar-nav me-auto mb-2 mb-lg-0")
                             li(class="nav-item")
                                 a(class="nav-link active", aria-current="page", href="#") Inicio
-                        
+                            
                             li(class="nav-item dropdown")
                                 a(class="nav-link dropdown-toggle", href="#", id="navbarDropdown", role="button", data-bs-toggle="dropdown", aria-expanded="false") Cursos
         
                                 div(class="dropdown-menu", aria-labelledby="navbarDropdown")  
-                                    - let settingString = (value) => { return '[setting:' + value + ']'}
                                     a(target="_blank", class="dropdown-item", href="#") Curso1
                                     a(target="_blank", class="dropdown-item", href="#") Curso2
+                                    a(target="_blank", class="dropdown-item", href="#") Curso3
                         form(class="d-flex fst-italic")
                             input(id="iBuscar",name="nBuscar",class="form-control me-2 fst-italic",type="search",placeholder="Buscar",aria-label="Search")
                             button(class="btn btn-outline-secondary fst-italic",type="submit") Buscar

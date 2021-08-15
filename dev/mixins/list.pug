@@ -1,3 +1,4 @@
 mixin list(elements)
     each item in elements
-        li= item
+        li(class="nav-item")
+            a(class="nav-link active", aria-current="page", href= href)=item

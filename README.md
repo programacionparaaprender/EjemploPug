@@ -27,6 +27,25 @@ http://localhost:3001/plugins
 ### opciones de instalación
 https://www.npmjs.com/package/gulp-pug
 
+
+### leer archivos json
+https://github.com/pugjs/pug/issues/3012
+npm install --save path fs
+
+mixin something()
+  - 
+    let path = require('path');
+    let fs = require('fs');
+    let dataJson = JSON.parse(fs.readFileSync(path.normalize(js/contactos.json")));
+    each item in dataJson
+        a(target="_blank", class="dropdown-item", href="#")=item.nombre+'-'+item.titulo
+
+
+li(class="nav-item dropdown")
+    a(class="nav-link dropdown-toggle", href="#", id="navbarDropdown", role="button", data-bs-toggle="dropdown", aria-expanded="false") Contactos
+    div(class="dropdown-menu", aria-labelledby="navbarDropdown")  
+        +something()
+
 ### condicionales
 https://pugjs.org/language/conditionals.html
 - const persona = {
